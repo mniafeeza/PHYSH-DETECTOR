@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Phish Detector",
+  "version": "1.0",
+  "description": "Detect phishing emails",
+  "permissions": ["activeTab"],
+  "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+      }
+  },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  }
+}
